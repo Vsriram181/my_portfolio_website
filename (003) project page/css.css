@@ -1,0 +1,115 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+body{
+    color: #fff;
+    background: #081b29;
+}
+.sub-title1{
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.sub-title1 span{
+    color: #0ef;
+}
+.port-text {
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(220, 138, 14);
+  }
+  .port-text span{
+    color: chartreuse;
+  }
+  
+  .portfolios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+  }
+  .portfolios .portfolio-item {
+    position: relative;
+    border-radius: 15px;
+  }
+  .portfolios .portfolio-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .portfolios .portfolio-item .hover-items {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    border: 152px solid rgba(20, 151, 154, 0.5);
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+  }
+  .portfolios .portfolio-item .hover-items a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan,0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
+  .portfolios .portfolio-item .hover-items h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+  .portfolios .portfolio-item .hover-items h3:hover{
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan,0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
+  }
+  .portfolios .portfolio-item .hover-items .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon i {
+    font-size: 1.5rem;
+    color: #0ef;
+    margin: 0 1rem;
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon:hover {
+    background-color: var(--color-white);
+  }
+  .portfolios .portfolio-item .hover-items .icons .icon:hover i {
+    color: var(--color-primary);
+  }
+  
+  .portfolio-item:hover .hover-items {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+
+
+
+  
